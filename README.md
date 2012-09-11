@@ -3,4 +3,5 @@ HACS
 
 Home Automation Control System
 
-This is a test to see if I push correctly.
+/Arduino - Contains the sketch to upload to the Arduino UNO 
+/RaspberryPi_Server - Contains source for everything you need to put on your server
