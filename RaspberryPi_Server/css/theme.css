@@ -1,0 +1,337 @@
+/*------------------HOME Page-----------------------*/
+
+html, body {
+	margin: 0;
+	padding: 0;
+	border: 0;
+ }
+ 
+body { 
+	background-color: #ccc;
+	font: 62.5% "Trebuchet MS", sans-serif
+}
+
+h1, h2, h3 {
+	color: #036;
+}
+
+h3 {
+	font-size: 1.2em;
+}
+
+h2 {
+	font-size: 1.5em;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+#content #img_me img {
+	float: left;
+	margin: 0 1em 0.25em 0;
+	border: 1px black solid;
+}
+
+
+#container {
+	width: 750px;
+	background-color:#fff;
+	border: 0.5px black solid;
+	margin: 0px auto;
+} 
+ 
+#content {
+	padding: 2em;
+	text-align: left;
+}
+
+.email {
+	text-align: center;
+}
+
+.redtxt {
+	color: #FF0000;
+}
+
+/*---------------HOME Page-----------------------*/
+
+
+
+
+/* --------------Contact Page-------------------- */
+#contact h1 {
+	text-align: center;
+}
+
+#contactcontent {
+	padding: 2em;
+	text-align: center;
+}
+
+#contactlist ul { padding: 0; }
+#contactlist ul li { display: inline; }
+
+#contactlist ul {
+	margin: 0;
+}
+#contactlist ul li img{
+	border: 0;
+}
+
+#contactlist ul li a {
+	padding: 1em;
+	text-decoration: none;
+}
+/* --------------End Contact Page-------------------- */
+
+
+
+
+/* --------------Blog-------------------- */
+#blog h1 {
+	text-align: center;
+}
+
+#blogcontent #oldsite img {
+	width: 700px;
+	height: 300px;
+	margin-bottom: 5px;
+	border: 1px black solid;
+}
+
+#blogcontent #newsite img {
+	width: 700px;
+	height: 300px;
+	border: 1px black solid;
+}
+
+#blogcontent {
+	padding: 2em;
+	text-align: left;
+}
+
+#twitterwidget {
+	position:relative;
+	top:200px;
+	left:-225px;
+}
+
+#android img {
+	float: left;
+	margin: 0 1em 0.25em 0;
+	width: 128px;
+	height: 128px;
+}
+
+#inception img {
+	float: left;
+	margin: 0 1em 0.25em 0;
+	width: 175px;
+	height: 250px;
+	border: 1px black solid;
+}
+
+#magicians img {
+	float: left;
+	margin: 0 1em 0.25em 0;
+	width: 75px;
+	height: 100px;
+	border: 1px black solid;
+}
+
+#megabus img {
+	float: right;
+	margin: 0.25em 0 0.25em 1em;
+	width: 200px;
+	height: 175px;
+	border: 1px black solid;
+}
+
+#katz img {
+	float: left;
+	margin: 0 1em 0.25em 0;
+	width: 275px;
+	height: 225px;
+	border: 1px black solid;
+}
+
+#lateshow img {
+	float: left;
+	margin: 0 1em 0.25em 0;
+	width: 300px;
+	height: 225px;
+	border: 1px black solid;
+}
+
+#empire img {
+	float: left;
+	margin: 0 1em 0.25em 0;
+	width: 225px;
+	height: 300px;
+	border: 1px black solid;
+}
+
+#nyclibrary img {
+	float: right;
+	margin: 0.25em 0 0.25em 1em;
+	width: 300px;
+	height: 225px;
+	border: 1px black solid;
+}
+
+#UN img {
+	float: left;
+	margin: 0 1em 0.25em 0;
+	width: 275px;
+	height: 200px;
+	border: 1px black solid;
+}
+
+#bridge img {
+	float: right;
+	margin: 0.25em 0 0.25em 1em;
+	width: 150px;
+	height: 200px;
+	border: 1px black solid;
+}
+
+#liberty img {
+	float: left;
+	margin: 0 1em 0.25em 0;
+	width: 175px;
+	height: 200px;
+	border: 1px black solid;
+}
+
+#timesquare img {
+	float: left;
+	margin: 0.25em 1em 0.25em 0;
+	width: 275px;
+	height: 200px;
+	border: 1px black solid;
+}
+
+/* --------------End Blog Page-------------------- */
+
+
+
+/* --------------Misc Page-------------------- */
+
+#projects h1 {
+	text-align: center;
+}
+
+#projectscontent {
+	padding: 2em;
+	text-align: left;
+}
+
+/* --------------End Misc Page-------------------- */
+
+
+
+/* --------------Books Page-------------------- */
+
+#bookscontent {
+	padding: 2em;
+	text-align: left;
+}
+
+
+#bookscontent .bookcover img {
+	float: left;
+	margin: 0 1em 0.25em 0;
+	border: 1px black solid;
+}
+#bookscontent .info li{
+	list-style-type:none;
+}
+
+#books h1{
+	text-align: center;
+}
+
+.breaker {
+	text-align: center;
+}
+
+#goodreadswidget {
+	position:relative;
+	top:200px;
+	left:-225px;
+}
+#grwidgetfooter{
+	position:relative;
+	top:501px;
+	left:-225px;
+}
+
+/* --------------End Books Page-------------------- */
+
+
+
+
+/* --------------Footer-------------------- */
+ 
+#footer {
+	text-align: center;
+	width: 750px;
+	margin: 0px auto;
+}
+
+/* --------------End Footer-------------------- */
+
+/* --------------Navigation-------------------- */
+#navcontainer {
+	width: 100%;
+	float:left;
+	background-color: #252A30;
+	margin-bottom: 1em;
+}
+
+#navcontainer ul { padding: 0; }
+#navcontainer ul li { display: inline; }
+
+#navcontainer ul {
+	margin: 0;
+	padding: 0 0 0 160px;
+	color: #FFFFFF;
+	font-family: tahoma, verdana, geneva, arial, helvetica, sans-serif;
+	font-size: 1em;
+	letter-spacing: 4px;
+	font-weight: bold;
+}
+
+#navcontainer ul li a {
+	padding: 0.25em 15px;
+	background-color: #252A30;
+	color: #FFFFFF;
+	text-decoration: none;
+	float: left;
+	border-right: 1px solid #FFFFFF;
+}
+
+#navcontainer ul li a:hover {
+	background-color: #63686E;
+	color: #FFFFFF;
+}
+
+#navlist li a:hover, #navlist li a:active {
+	color: #FFFFFF;
+	text-decoration: none;
+	text-align: left;
+	text-transform: uppercase;
+	background: #63686E;
+}
+/* --------------End Navigation-------------------- */
+
+
+
+
+
+
+
+
+
+
