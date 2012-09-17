@@ -6,7 +6,6 @@
   REFERENCES:
   1. http://www.ladyada.net/learn/sensors/tmp36.html
   2. http://www.sparkfun.com/tutorial/AIK/ARDX-EG-SPAR-WEB.pdf (Page 26)
-  3. http://www.codeproject.com/Articles/389676/Arduino-and-the-Web-using-NodeJS-and-SerialPort2
 */
 
 //PIN ASSIGNMENTS
@@ -18,10 +17,7 @@ void setup() {
 
 void loop() { 
   int temp_value = getTemp();
-  //Serial.print("A");
-  Serial.print(temp_value);
-  //Serial.print("B");
-  
+  Serial.print(temp_value);  
   delay(1000);
 }
 
