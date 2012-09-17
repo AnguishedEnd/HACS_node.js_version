@@ -1,17 +1,29 @@
 //Required Modules
 var io = require('socket.io');
+var SerialPort = require('serialport2').SerialPort;
 
+//Serial setup
+var portName = '/dev/ttyACM0';
+var port = new SerialPort();
+
+port.open(portName, {
+	baudRate: 9600,
+	dataBits: 8,
+	parity: 'none',
+	stopBits: 1,
+	flowControl: false
+});
 //Establish socket
-var socket = io.listen(8080)
+var socket = io.listen(8080);
 //io.set('log level', 1); //prints debugging code
 socket.on('connection', function (client) {
 	console.log('connected to client');
 	
-	//This is temporary until I get serial working...
-	var temp_value = '50';
-	setInterval(function(){
-		client.send(temp_value)
-	}, 2000);
+	var temp_val = '';
+	port.on('data', function(data) {
+		temp_val = data.toString();
+		client.send(temp_val);
+	});
 	
 	client.on('message', function (rx_message) {
 		console.log(rx_message);

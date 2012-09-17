@@ -17,12 +17,12 @@ void setup() {
 }
 
 void loop() { 
-  float temp_value = getTemp();
-  Serial.print("0");
+  int temp_value = getTemp();
+  //Serial.print("A");
   Serial.print(temp_value);
-  Serial.print("0");
+  //Serial.print("B");
   
-  delay(100);
+  delay(1000);
 }
 
 float getTemp() {
