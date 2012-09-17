@@ -24,10 +24,6 @@ On the webpage, users can both read and control pins of the Arduino.
 
 
 ##REFERENCES:
-Some of the source code has been used from various other projects from around the web
 
-Original project is here
-1. http://www.codeproject.com/Articles/389676/Arduino-and-the-Web-using-NodeJS-and-SerialPort2
-
-How to use socket.io
-2. http://webdevrefinery.com/forums/topic/7871-node-how-to-use-socketio-to-push-realtime-events/
+* http://www.codeproject.com/Articles/389676/Arduino-and-the-Web-using-NodeJS-and-SerialPort2
+* http://webdevrefinery.com/forums/topic/7871-node-how-to-use-socketio-to-push-realtime-events/
