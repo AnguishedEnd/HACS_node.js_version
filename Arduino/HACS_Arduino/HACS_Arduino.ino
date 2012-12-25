@@ -1,30 +1,43 @@
 /*Home Automation Control System (HACS) by COLIN LOBO
-  
-  WHAT YOU NEED:
-  1 - 38GZ TEMPERATURE SENSOR
-  
+
   REFERENCES:
   1. http://www.ladyada.net/learn/sensors/tmp36.html
   2. http://www.sparkfun.com/tutorial/AIK/ARDX-EG-SPAR-WEB.pdf (Page 26)
 */
 
-//PIN ASSIGNMENTS
-const int tempPin = A0; //Vout of TMP36 connected to pin A0
+#include "SerialComm.h"
+
+SerialComm SerialComm(9600, 40);
+
 
 void setup() {
-  Serial.begin(9600);
+  for(int i = 2; i < 14; i++)
+  {
+    pinMode(i, OUTPUT);  
+    digitalWrite(i, LOW);
+  }
 }
 
-void loop() { 
-  int temp_value = getTemp();
-  Serial.print(temp_value);  
-  delay(1000);
+void loop() {
+  boolean PacketState; 
+  if(Serial.available() > 0)
+  {
+    while((Serial.peek() != 255) && (Serial.available() > 0))
+    {
+      Serial.read(); //discard whats in the buffer until next packet header
+    }
+    PacketState = SerialComm.Receive();
+  }
+  if(PacketState == true)
+  {
+    //int array[] = SerialComm.GetPacket();
+    //setPins(array);
+  }
+  
+  //int array[] = readPins;
+  //SerialComm.SetPacket(array);
+  
+  SerialComm.Send();
+  delay(100);
 }
 
-float getTemp() {
-  int tempReading = analogRead(tempPin); //ADC reading (value between 0-1023)
-  float voltage = tempReading * 5.0;
-  voltage /= 1023.0; //Convert ADC reading (0-1023) to a voltage reading
-  float temperature = (voltage - 0.5) * 100; //offset by 500mV to get negative temperatures. Multiply by 100 to get degC (each 10mV is 1 degC)
-  return temperature;
-}
